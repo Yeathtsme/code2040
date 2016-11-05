@@ -48,3 +48,29 @@ Use the key array for your array.
 As with the previous step, these endpoints expect you to send JSON dictionaries in the body of the request.
 
 Hint: You’ll need a little string-fu to complete this challenge. But rest assured: comparing the beginnings of strings is a common task. Your platform’s standard libraries might even have some code to help you do this.
+
+
+Step V: The dating game
+
+Great job so far. The last challenge is a little different. You’re going to work with dates and times.
+
+The API will again give you a dictionary. The value for datestamp is a string, formatted as an ISO 8601 datestamp. The value for interval is a number of seconds.
+
+You’re going to add the interval to the date, then return the resulting date to the API. POST your token here:
+
+http://challenge.code2040.org/api/dating
+
+Then POST a dictionary with your results here:
+
+http://challenge.code2040.org/api/dating/validate
+
+Use the key token for your token.
+
+Use the key datestamp for an ISO 8601 datestamp string.
+
+As with the previous step, these endpoints expect you to send JSON dictionaries in the body of the request.
+
+Hints:
+
+Make sure your datestamp is formatted the same way as the one the API gives you.
+Dates are hard! Don’t feel badly if you’re scratching your head on this one. Most platforms have libraries to help with date and time tasks. Don’t be afraid of using one to solve this challenge.
